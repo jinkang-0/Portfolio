@@ -92,7 +92,7 @@ nav {
   margin-bottom: 5%;
 }
 
-#recent-projects {
+#best-projects {
   text-align: center;
   color: white;
   font-weight: bold;
@@ -101,7 +101,7 @@ nav {
   margin-bottom: 2%;
 }
 
-#most-recent {
+#best {
   width: 100%;
   color: white;
   display: flex;
@@ -110,7 +110,7 @@ nav {
   margin-bottom: 5%;
 }
 
-#most-recent * {
+#best * {
   width: 80%;
 }
 
