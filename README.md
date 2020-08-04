@@ -1,2 +1,5 @@
 # Jinkang's Portfolio
-I plan to update this from time to time.
+A place to put my projects.  
+  
+### Github page
+https://jinkang-0.github.io/Portfolio/
