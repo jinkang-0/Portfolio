@@ -23,10 +23,15 @@ body {
 
 a {
 	color: #ccc9dc;
+	transition: 100ms;
 }
 
 a:hover {
 	color: #e3e2eb;
+}
+
+a img:hover {
+	transform: scale(1.01);
 }
 
 /* navbar */
@@ -50,7 +55,8 @@ nav {
 	-webkit-user-select: none;
 }
 
-.nav-item:hover {
+a.nav-item:hover {
+	transform: scale(1.1);
 	text-decoration: none;
 }
 
@@ -71,10 +77,17 @@ nav {
 
 /* body */
 
+.category {
+  color: rgb(0, 192, 192);
+  font-weight: 1000;
+  margin: 0 0 0 5px;
+}
+
 .project-img {
 	width: 100%;
 	border: 3px #0c1821 solid;
 	margin-bottom: 10px;
+	transition: 100ms;
 }
 
 .project-title {
