@@ -65,7 +65,7 @@ function animate() {
     spawnCircle();
   }
 
-  for (var i = 0; i < circles.length; i++) {
+  for (var i = circles.length - 1; i >= 0; i--) {
     circles[i].update();
     circles[i].show();
     if (circles[i].alpha <= 0) circles.splice(i, 1);
