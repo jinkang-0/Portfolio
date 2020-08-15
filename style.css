@@ -86,9 +86,9 @@ a.nav-item:hover {
 }
 
 #title {
+  color: white;
   margin-top: 0;
   font-size: 9vw;
-  color: white;
 }
 
 /* body */
