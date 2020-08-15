@@ -21,6 +21,8 @@
             <a href="#footer" class="nav-item">Contact</a>
         </nav>
 
+        <canvas></canvas>
+
         <!-- header -->
         <div id="header">
             <span id="name">Jinkang Fang's</span>
@@ -28,36 +30,29 @@
         </div>
 
         <!-- introduction -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img style="width: 90%; margin-top: -20%;" src="assets/laptop.png" alt="laptop">
-                </div>
-                <div class="col-md-1"></div>
-                <div id="intro" class="col-md-6">
-                    Hey!
-                    <br> <br>
-                    I’m currently a high school junior that’s interested in programming and games!
-                    <br> <br>
-                    Look below! There’s my best projects!
-                </div>
-            </div>
+        <div class="text-center w-25 ml-auto mr-auto" style="margin-top: 50px;">
+            <p>Hey!</p>
+            <br>
+            <p>I’m currently a high school junior that’s interested in programming and games!</p>
+            <br>
+            <p>Look below! There’s my best projects!</p>
         </div>
 
         <!-- best projects -->
         <h1 id="best-projects">Best Projects</h1>
 
-        <div id="best">
-            <h5 class="category">WEB GAME</h5>
-            <a href="https://jinkang-0.github.io/MB-Final/" target="_blank"><img class="project-img" style="width: 100%;" src="assets/cookie_clicker.PNG" alt="cookie_clicker"></a>
-            <h3 class="project-title">Cookie Clicker</h3>
-            <p class="project-desc">
-                A game about clicking cookies and getting as much cookies as possible. <br>
-                Buy upgrades with the cookies you got from clicking to get even more cookies!
-            <p>
-        </div>
-
         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="category">WEB GAME</h5>
+                    <a href="https://jinkang-0.github.io/MB-Final/" target="_blank"><img class="project-img" style="width: 100%;" src="assets/cookie_clicker.PNG" alt="cookie_clicker"></a>
+                    <h3 class="project-title">Cookie Clicker</h3>
+                    <p class="project-desc">
+                        A game about clicking cookies and getting as much cookies as possible. <br>
+                        Buy upgrades with the cookies you got from clicking to get even more cookies!
+                    <p>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-5">
                     <h5 class="category">WEB DESIGN</h5>
@@ -79,8 +74,8 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center">
-            <a href="projects/projects.html" id="see-more">See more projects</a>
+        <div class="d-flex justify-content-center see-more">
+            <a href="projects/projects.html">See more projects</a>
         </div>
 
         <!-- footer -->
@@ -102,6 +97,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="script.js"></script>
 
     </body>
 </html>

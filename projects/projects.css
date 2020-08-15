@@ -72,7 +72,7 @@ a.nav-item:hover {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: calc(4rem + 1vw / 2);
 }
 
 /* body */
@@ -100,11 +100,7 @@ a.nav-item:hover {
 	color: #ccc9dc;
 	font-weight: 500;
 	font-size: 18px;
-	margin-bottom: 5%;
-}
-
-.row {
-    margin-bottom: 100px;
+	margin-bottom: 100px;
 }
 
 /* footer */
@@ -112,9 +108,13 @@ a.nav-item:hover {
 #footer {
 	background-color: #0c1821;
 	width: 100%;
-	height: 300px;
+	height: auto;
 	padding: 50px;
 	margin-top: 5%;
+}
+
+.sec-col {
+	margin-bottom: 50px;
 }
 
 .sec-title {

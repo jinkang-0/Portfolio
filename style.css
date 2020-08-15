@@ -67,8 +67,16 @@ a.nav-item:hover {
 
 /* header */
 
-#header {
+canvas {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 500px;
   background-color: #1B2A41;
+  z-index: -1;
+}
+
+#header {
   width: 100%;
   height: 500px;
   margin-top: 50px;
@@ -107,19 +115,6 @@ a.nav-item:hover {
   margin-bottom: 2%;
 }
 
-#best {
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5%;
-}
-
-#best * {
-  width: 80%;
-}
-
 /* projects */
 
 .category {
@@ -149,12 +144,13 @@ a.nav-item:hover {
   color: #CCC9DC;
   font-weight: 500;
   font-size: 18px;
-  margin-bottom: 5%;
+  margin-bottom: 100px;
 }
 
-#see-more {
+.see-more {
+  width: 100%;
   text-align: center;
-  font-size: 2vw;
+  font-size: calc(1em + 1vw / 2);
 }
 
 /* footer */
