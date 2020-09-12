@@ -8,7 +8,7 @@ window.addEventListener("resize", function() {
   init();
 })
 
-var pCount = parseInt(innerWidth / 40);
+var pCount = parseInt(innerWidth / 100);
 
 var circles = [];
 

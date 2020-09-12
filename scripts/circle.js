@@ -18,7 +18,7 @@ class Circle {
     this.y += this.vely;
     if (!this.spawning) this.alpha -= this.decay;
     if (this.spawning) this.alpha += this.decay * 2;
-    if (this.alpha >= 1) this.spawning = false;
+    if (this.alpha >= 0.8) this.spawning = false;
   }
 
   show() {
