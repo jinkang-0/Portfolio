@@ -41,6 +41,7 @@ function chooseOption(type, pick) {
       if (filterby) {
         // if option is selected this time, remove class and do nothing
         if (filterby === pick) {
+          filterby = undefined;
           pick.classList.remove('picked');
           filtered = projects;
           reloadProjects();
