@@ -132,7 +132,7 @@ function loadProjects() {
     category.innerHTML = filtered[loadedCount+1].category.toUpperCase();
     desc.innerHTML = filtered[loadedCount+1].desc;
     link.href = filtered[loadedCount+1].link;
-    img.src = "/" + filtered[loadedCount+1].img;
+    img.src = "../" + filtered[loadedCount+1].img;
     
     link.target = '_blank';
     link.appendChild(img);
