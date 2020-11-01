@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/assets/box.png" type="image/x-icon">
+    <title>Jinkang's Portfolio | Projects</title>
+
+    <link rel="stylesheet" href="projects.css">
+    <script src="/scripts/projects.js"></script>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        <a class="link" href="/">Home</a>
+        <span>Projects</span>
+        <a class="link" href="#contacts">Contacts</a>
+    </nav>
+
+    <!-- filters, sorts, view -->
+    <section class="options">
+        <div class="rearrange-titles">
+            <div onclick="chooseOption('title', this)">Filter</div>
+            <div onclick="chooseOption('title', this)">Sort</div>
+            <div class="type-pick" onclick="chooseOption('title', this)">View</div>
+        </div>
+        <div class="rearrange-options">
+            <div class="option filters">
+                <p onclick="chooseOption('filter', this)">Web Game</p>
+                <p onclick="chooseOption('filter', this)">Simulation</p>
+            </div>
+            <div class="option sorts">
+                <p id="started" onclick="chooseOption('sort', this)">By date started</p>
+                <p id="updated" class="picked" onclick="chooseOption('sort', this)">By last updated</p>
+            </div>
+            <div class="option views shown">
+                <svg id="side-view" onclick="chooseOption('view', this)" width="55" height="26" viewBox="0 0 55 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="21" height="3" fill="#C4C4C4"/>
+                    <rect y="6" width="21" height="9" fill="#C4C4C4"/>
+                    <rect x="24" width="31" height="26" fill="#C4C4C4"/>
+                </svg>
+                <svg id="stack-view" class="picked" onclick="chooseOption('view', this)" width="39" height="31" viewBox="0 0 39 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="5" width="28" height="16" fill="#C4C4C4"/>
+                    <rect width="15" height="3" fill="#C4C4C4"/>
+                    <rect y="23" width="39" height="8" fill="#C4C4C4"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- all projects -->
+    <section id="projects" class="view-stacked">
+        <!-- injected with script -->
+    </section>
+
+    <!-- load more projects -->
+    <span id="loadmore"><a class="link" onclick="loadProjects()">See more projects</a></span>
+
+    <!-- footer -->
+    <footer id="contacts">
+        <div>
+            <h2>Follow</h2>
+            <a class="link" href="#">Instagram</a>
+            <a class="link" href="#">LinkedIn</a>
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <a class="link" href="mailto:jinkang.fang@gmail.com">jinkang.fang@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="/scripts/p-render.js"></script>
+
+</body>
+</html>

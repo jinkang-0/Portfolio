@@ -1,104 +1,103 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" href="assets/portfolio.png" type="image/x-icon">
-        <title>Jinkang's Portfolio</title>
+    <link rel="shortcut icon" href="assets/box.png" type="image/x-icon">
+    <title>Jinkang's Portfolio</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-
-        <script src="scripts/circle.js"></script>
-
-    </head>
-    <body>
-
-        <!-- navbar -->
-        <nav>
-            <span class="nav-item" id="active">Home</span>
-            <a href="projects/projects.html" class="nav-item">Projects</a>
-            <a href="#footer" class="nav-item">Contact</a>
-        </nav>
-
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/projects.js"></script>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        <span>Home</span>
+        <a class="link" href="projects/">Projects</a>
+        <a class="link" href="#contacts">Contacts</a>
+    </nav>
+    
+    <!-- header screen -->
+    <header>
         <canvas></canvas>
+        <h1>Portfolio</h1>
+    </header>
 
-        <!-- header -->
-        <div id="header">
-            <span id="name">Jinkang Fang's</span>
-            <h1 id="title">PORTFOLIO</h1>
+    <!-- introduction -->
+    <section class="">
+        <div class="face-frame">
+            <svg id="face" width="189" height="179" viewBox="0 0 189 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M55 40C52.6356 29.5241 67.1993 27.891 77 23.5C95.1759 15.3568 110.3 14.3674 128 23.5C138.436 28.8848 151.066 32.3051 150 44C148.874 56.3537 122 59 122 59L65 51C65 51 56.2781 45.6631 55 40Z" fill="#EBA3A3"/>
+                <path d="M77 31.5H64.5H70.75V38.5M77 31.5H84.5M77 31.5V38.5M92 29H101.5M92 36.5H101.5M113 32.5C113 29 114.817 26.8917 118.5 27C122.019 27.1035 123.5 32.5 123.5 32.5C123.5 32.5 119.053 32.5 113 32.5ZM113 32.5C113 35.5 112.67 36.6899 115.5 38.5C118.97 40.7194 123.5 36.5 123.5 36.5" stroke="black"/>
+                <path d="M46 170C14 147.5 19 73 34 49C46.041 29.7344 69.7763 49.9206 94.5 49C141 41 176.924 34.2009 176.924 34.2009C165.562 84.3376 161.91 92.9686 170.816 111.612C179.721 130.255 180.018 153.127 165.004 165.632C142.726 184.187 59.7633 179.677 46 170Z" fill="#D9E39C"/>
+                <path id="hair" d="M73 78.5V60.0576L44 89L30 126.5L0 102.5L4.5 51.5L44 18L92 0H151L189 28.5576L181 72.3096L167.5 60.0576L151 72.3096L142 60.0576L99.5 78.5V60.0576L73 78.5Z" fill="black"/>
+                <path d="M94 112.619C94 125.086 87.4588 127 82.7784 127C78.098 127 72 125.933 72 111.589C72 97.2454 72.494 91 82.7784 91C93.0627 91 94 98.2749 94 112.619Z" fill="black"/>
+                <path d="M140 104.712C140 116.656 133.756 120 129.288 120C124.821 120 119 117.469 119 103.726C119 89.9835 119.472 84 129.288 84C139.105 84 140 90.9698 140 104.712Z" fill="black"/>
+                <path d="M83 141.998L145.381 134C145.381 134 145.381 153.194 128.853 161.192C87.7985 164.924 83 141.998 83 141.998Z" fill="black"/>
+            </svg>
         </div>
-
-        <!-- introduction -->
-        <div id="intro">
-            <p>Oh hello there.</p>
-            <p>I’m a high school junior that’s interested in programming and games.</p>
-            <p>This is just a place to put my projects. :)</p>
+        <div class="dialogue">
+            <p>
+                Hey! I'm Jinkang.<br><br>
+                This website is sort of a place to showcase the projects I've worked on. <br>
+                I hope you enjoy them!
+            </p>
         </div>
+    </section>
 
-        <!-- best projects -->
-        <h1 id="best-projects">Featured</h1>
+    <!-- featured projects -->
+    <h1>Featured Projects</h1>
 
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-12">
-                    <h5 class="category">WEB GAME</h5>
-                    <a href="https://jinkang-0.github.io/Chess/" target="_blank"><img src="assets/chess.PNG" alt="chess" class="project-img"></a>
-                    <h3 class="project-title">Chess</h3>
-                    <p class="project-desc">
-                        The classic Chess, but on a website instead of a board!
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <h5 class="category">SIMULATION</h5>
-                    <a href="https://jinkang-0.github.io/Pathfinding-Visualization/" target="_blank"><img class="project-img" style="width: 100%;" src="assets/pathfinding_visualization.PNG" alt="pathfinding_visualization"></a>
-                    <h3 class="project-title">Pathfinding Visualization</h3>
-                    <p class="project-desc">
-                        A visualization of 4 popular pathfinding algorithms.
-                    <p>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-5">
-                    <h5 class="category">WEB GAME</h5>
-                    <a href="https://jinkang-0.github.io/Tetris/" target="_blank"><img src="assets/tetris.PNG" alt="tetris" class="project-img"></a>
-                    <h3 class="project-title">Tetris</h3>
-                    <p class="project-desc">
-                        A game about stacking tetrominoes in the same row.
-                    </p>
-                </div>
-            </div>
+    <div id="featured1" class="featured">
+        <div>
+            <h4 id="featured1-category">CATEGORY</h4>
+            <h2 id="featured1-title">Project Name</h2>
+            <p  id="featured1-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime accusantium perferendis itaque optio ipsa illo neque facilis est debitis tempora?</p>
         </div>
+        <a id="featured1-link" target="_blank"><img id="featured1-img" src="assets/project_images/canvas_practice.PNG" alt=""></a>
+    </div>
 
-        <div class="d-flex justify-content-center see-more">
-            <a href="projects/projects.html">See more projects</a>
+    <div id="featured2" class="featured">
+        <div>
+            <h2 id="featured2-title">Project Name</h2>
+            <p id="featured2-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione temporibus dolor illum explicabo quae voluptatem quibusdam assumenda inventore natus?</p>
         </div>
-
-        <!-- footer -->
-        <div id="footer">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-3 sec-col">
-                    <h3 class="sec-title">Follow</h3>
-                    <a href="https://www.instagram.com/zdrm0/" target="_blank" class="sec-link">Instagram</a> <br>
-                    <a href="https://www.linkedin.com/in/jinkang-fang-64b6021b3/" target="_blank" class="sec-link">LinkedIn</a>
-                </div>
-                <div class="col-md-3 sec-col">
-                    <h3 class="sec-title">Contact</h3>
-                    <a href="mailto:jinkang.fang@gmail.com" class="sec-link">jinkang.fang@gmail.com</a>
-                </div>
-                <div class="col-md-3 sec-col">
-                    <h3 class="sec-title">Credit</h3>
-                    <span class="sec-link">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></span>
-                </div>
-            </div>
+        <div>
+            <h4 id="featured2-category">CATEGORY</h4>
+            <a id="featured2-link" target="_blank"><img id="featured2-img" src="assets/project_images/pathfinding_visualization.PNG" alt=""></a>
         </div>
+    </div>
 
-        <script src="scripts/script.js"></script>
+    <div id="featured3" class="featured">
+        <div>
+            <h4 id="featured3-category">CATEGORY</h4>
+            <a id="featured3-link" target="_blank"><img id="featured3-img" src="assets/project_images/chess.PNG" alt=""></a>
+        </div>
+        <div>
+            <h2 id="featured3-title">Project Name</h2>
+            <p id="featured3-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia asperiores dolor molestiae beatae aliquid nesciunt ratione incidunt dolore nulla veniam?</p>
+        </div>
+    </div>
 
-    </body>
+    <!-- link to more projects -->
+    <span><a class="link" href="projects/">See more projects</a></span>
+
+    <!-- footer -->
+    <footer id="contacts">
+        <div>
+            <h2>Follow</h2>
+            <a class="link" target="_blank" href="https://www.instagram.com/zdrm0/">Instagram</a>
+            <a class="link" target="_blank" href="https://www.linkedin.com/in/jinkang-fang-64b6021b3/">LinkedIn</a>
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <a class="link" href="mailto:jinkang.fang@gmail.com">jinkang.fang@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+
+</body>
 </html>
