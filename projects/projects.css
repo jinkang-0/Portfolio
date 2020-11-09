@@ -47,6 +47,8 @@ body {
 
 .link:hover::after { transform: scaleX(1); }
 
+.link:focus { outline: none; }
+
 /* navbar */
 nav {
   background: var(--navbar);
@@ -61,12 +63,22 @@ nav {
 }
 
 nav span { 
+  position: relative;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
   user-select: none;
   -moz-user-select: none;
   -moz-user-select: none;
+}
+
+nav span::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 100%; bottom: 0; left: 0; right: 0;
+  background: white;
 }
 
 nav a {
@@ -238,10 +250,12 @@ section#projects {
   width: 100%; 
   border: 2px black solid;
   transition: 100ms;
+  box-shadow: 0 0 1px black;
 }
 
 .project img:hover {
-  transform: translate(-5px, -2px);
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 1px black;
 }
 
 .project a { 
@@ -272,6 +286,7 @@ section#projects {
     'img'
     'title'
     'desc';
+  margin-bottom: 50px;
 }
 
 .view-side .project {
@@ -281,6 +296,7 @@ section#projects {
     'category img'
     'title img'
     'desc img';
+  padding: 0 8%;
 }
 
 /* view more projects */
@@ -314,9 +330,13 @@ footer div {
 footer div h2 {
   color: white;
   font-size: 1.5rem;
+  margin-bottom: 8px;
 }
 
-footer div a { font-size: 1.2rem; }
+footer div a { 
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
 
 /* media queries */
 @media (max-width: 800px) {
@@ -340,13 +360,9 @@ footer div a { font-size: 1.2rem; }
   .rearrange-titles { padding: 0; }
   .rearrange-titles::after { display: none; }
 
-}
-
-@media (max-width: 400px) {
-
-  .rearrange-options { font-size: 1rem; }
-
   .view-side { gap: 120px; }
+
+  .view-side .project p { width: 100%; }
 
   .view-side .project {
     grid-template-columns: 1fr;
@@ -356,8 +372,20 @@ footer div a { font-size: 1.2rem; }
       'img'
       'title'
       'desc';
+    padding: 0;
   }
 
-  footer { flex-direction: column; }
+}
+
+@media (max-width: 400px) {
+
+  .rearrange-options { font-size: 1rem; }
+
+  .view-stacked .project { margin-bottom: 0; }
+
+  footer { 
+    flex-direction: column; 
+    padding: 10% 15%;
+  }
 
 }
